@@ -244,7 +244,7 @@ class SimulationFactory:
                                                 breeder, sim_viz)
             simulations.append(simulation)
             if len(simulations) == self.subprocesses:
-                yield simulations
+                yield simulations 
                 simulations = []
         yield simulations
 

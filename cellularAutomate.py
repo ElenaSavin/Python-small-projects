@@ -1,13 +1,9 @@
 import random as rand
 import numpy as np
 import pyglet as pyglet
-# from move import Move
 from tkinter import *
 import tkinter.messagebox
 import random
-# from cellular_automata import CellularAutomata        SHOULD HAVE BEEN ERASED
-# import start_window                                   SHOULD HAVE BEEN ERASED
-# from ploting import Plotting                          SHOULD HAVE BEEN ERASED
 
 WINDOW_SIZE = (600, 610)
 CELL_SIZE = int(WINDOW_SIZE[0]/200)
@@ -314,13 +310,12 @@ class Window(pyglet.window.Window):
         update matrix, move and steps after each generation.
         :param dt: needed for base method.
         """
-        # self.plot.update_result_matrix(self.steps)  SHOULD HAVE BEEN ERASED
         self.ca.move.move()
         self.steps += 1
 
 
 if __name__ == "__main__":
-    start_window = StartWindow()        # WAS start_window.StartWindow() BEFORE FILE MERGE
+    start_window = StartWindow()
     n, p, k = start_window.run()
     window = Window(n, p, k)
     pyglet.app.run()

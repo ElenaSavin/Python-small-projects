@@ -1,2 +1,4 @@
 # Python-small-projects
-Python projects for computation biology class. Containing Cellular Automate, Genetic algorithm,  
+In collaboration with Kobi Shapira.
+Python projects for computation biology class. 
+Topics: Cellular Automate, Genetic algorithms, Neural networks.  

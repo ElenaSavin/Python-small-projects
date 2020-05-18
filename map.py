@@ -122,9 +122,7 @@ class SimulationViz(Enum):
 
 
 class SimulationFactory:
-    """
-        This is a simulation factory class. creates simulations.
-    """
+    """This is a simulation factory class. It creates all kinds of simulations."""
     def __init__(self, subprocesses=1):
         """
         @param subprocesses: number of subprocesses
